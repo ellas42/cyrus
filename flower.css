@@ -118,3 +118,22 @@ body {
     text-align: center;
     font-family: "League Spartan", sans-serif;          
 }
+
+
+@media (max-width: 768px) {
+  .flower-wrapper {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .floating-text {
+    font-size: 1rem;
+    padding: 0 10px;
+    line-height: 1.4;
+  }
+
+  .flower svg {
+    max-width: 85%;
+    height: auto;
+  }
+}
