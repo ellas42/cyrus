@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Lexend:wght@100..900&family=Mulish:wght@500&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+body {
+  background: rgba(255, 247, 251, 0.8); 
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@keyframes bloom {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes bloom1 {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes bloom2 {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#flower .petal {
+  transform-origin: center;
+  transform: scale(0);
+  opacity: 0;
+  animation: bloom 1s ease-out forwards;
+}
+
+#flower .petal:nth-child(1) { animation-delay: 0s; }
+#flower .petal:nth-child(2) { animation-delay: 0.2s; }
+#flower .petal:nth-child(3) { animation-delay: 0.4s; }
+#flower .petal:nth-child(4) { animation-delay: 0.6s; }
+
+#fancy-flower {
+  opacity: 0;
+  transform: scale(0.8);
+  animation: appear 0.5s ease-out 0.5s forwards;
+}
+
+.petal-group {
+  transform-origin: center;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.layer1 {
+  animation: bloom1 1s ease-out 0.6s forwards;
+}
+
+.layer2 {
+  animation: bloom2 1s ease-out 1.2s forwards;
+}
+
+.flower-link {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.flower-link:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.flower-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+
+/*text*/
+.floating-text {
+  margin-top: 20px;
+  font-size: 1.8rem;
+  color: #5b2b43;
+  font-weight: bold;
+  animation: float 3s ease-in-out infinite;
+  text-align: center;
+  font-family: "League Spartan", sans-serif;
+}
+
+.text-again {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #5b2b43;
+    text-align: center;
+    font-family: "League Spartan", sans-serif;          
+}
+
+
+.text-under {
+    margin-top: 0;
+    font-size: 1.3rem;
+    color: #5b2b43;
+    text-align: center;
+    font-family: "League Spartan", sans-serif;          
+}

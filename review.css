@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Lexend:wght@100..900&family=Mulish:wght@500&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+  background: rgba(255, 190, 224, 0.8);
+  margin: 0;
+  padding: 0;
+  font-family: "League Spartan", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.review-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 40px;
+  color: #5b2b43;
+}
+
+.review-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 20px;
+  padding: 40px 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+.review-card {
+  background-color: #fff0f5;
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+}
+
+.review-card h3 {
+  margin-top: 0;
+  color: #4a1c2a;
+  font-weight: 700;
+}
+
+.review-card p {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.4;
+}
+
+.final-btn-wrapper {
+  margin: 40px 0;
+}
+
+.final-button {
+  background-color: #ff8ab0;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.final-button:hover {
+  background-color: #ff6699;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .review-container {
+    grid-template-columns: 1fr; /* 1 column on small screens */
+  }
+
+  .review-title {
+    font-size: 2rem;
+  }
+
+  .final-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
