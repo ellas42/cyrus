@@ -94,6 +94,7 @@ body {
 /*text*/
 .floating-text {
   margin-top: 20px;
+  margin-bottom: 10px;
   font-size: 1.8rem;
   color: #5b2b43;
   font-weight: bold;
@@ -119,21 +120,11 @@ body {
     font-family: "League Spartan", sans-serif;          
 }
 
-
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .flower-wrapper {
-    max-width: 90%;
-    padding: 20px;
-  }
-
-  .floating-text {
-    font-size: 1rem;
+    max-width: 95vw;
+    width: 100%;
     padding: 0 10px;
-    line-height: 1.4;
-  }
-
-  .flower svg {
-    max-width: 85%;
-    height: auto;
+    box-sizing: border-box;
   }
 }
