@@ -79,12 +79,16 @@ body {
   }
 
   .review-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .final-button {
     font-size: 1rem;
     padding: 10px 20px;
+  }
+
+  .final-btn-wrapper {
+    margin-top: 6px;;
   }
 }
 
