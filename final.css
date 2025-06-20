@@ -14,19 +14,32 @@ body {
 }
 
 .note-container {
-  text-align: center;
-  margin-top: 80px;
-  padding: 20px;
-  animation: fadeIn 2s ease-out;
+  background: repeating-linear-gradient(
+    to bottom,
+    #ffffff,
+    #ffffff 28px,
+    #ffeef5 28px,
+    #ffeef5 30px
+  );
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 40px 30px;
+  margin: 80px auto 0;
+  max-width: 800px;
+  position: relative;
+  z-index: 2;
 }
 
 .note-text {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   color: #3d1f2b;
-  line-height: 1.6;
-  max-width: 1000px;
-  margin: 0 auto;
+  line-height: 1.8;
+  font-family: "League Spartan", sans-serif;
+  text-align: left;
+  white-space: pre-wrap;
 }
+
+
 
 .final-btn-wrapper {
   margin-top: 0px; /* increased spacing */
@@ -52,6 +65,7 @@ a:hover {
 
 .dog-footer {
   position: fixed;
+  display: block;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -61,6 +75,7 @@ a:hover {
   pointer-events: none;
   z-index: 1;
 }
+
 
 
 /* Responsive Styling */
@@ -87,14 +102,111 @@ a:hover {
     width: 100%;
     text-align: center;
     z-index: 10;
+    margin-bottom: 30px;
   }
 
   .dog-footer {
-    max-width: 100%;
-    padding: 0 10px;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    max-width: 100vw;
+    height: auto;
+    padding: 0;
+    margin: 0;
     z-index: 1;
   }
 }
 
+/* iPhone 12/13/14/15 Pro, most modern phones */
+@media (max-width: 430px) {
+  .note-container {
+    background: repeating-linear-gradient(
+      to bottom,
+      #ffffff,
+      #ffffff 26px,
+      #ffeef5 26px,
+      #ffeef5 28px
+    );
+    padding: 30px 20px;
+    border-radius: 20px;
+    margin: 50px 15px 0;
+  }
+
+  .note-text {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .note-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+
+
+
+
+
+  .final-button {
+    font-size: 0.95rem;
+    padding: 10px 20px;
+  }
+
+  .final-btn-wrapper {
+    position: fixed;
+    left: 50%;
+    bottom: 150px; /* adjust as needed for smaller screens */
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+  }
+
+  .dog-footer {
+    display: block;
+    width: 100vw;
+    max-width: 100vw;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/* iPhone SE and very small screens */
+@media (max-width: 375px) {
+  .note-title {
+    font-size: 2rem;
+  }
+
+  .note-text {
+    font-size: 1.4rem;
+    padding: 0 10px;
+  }
+
+  .final-button {
+    font-size: 0.95rem;
+    padding: 10px 10px;
+  }
+
+  .final-btn-wrapper {
+    position: fixed;
+    left: 50%;
+    bottom: 140px;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+  }
+
+  .dog-footer {
+    display: block;
+    width: 100vw;
+    max-width: 100vw;
+    padding: 0;
+    margin: 0;
+  }
+}
 
 
